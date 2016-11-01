@@ -7,8 +7,8 @@ function addLetters(name) {
 }
 
 function isValidName(name) {
-  if (name.includes("S") && name.includes("R") &&
-    name.includes("T") && name.includes("N") &&
+  if (isInArray("S", name) && isInArray("R", name) &&
+    isInArray("T", name) && isInArray("N", name) &&
     includesThreeAs(name)) {
     return true;
   }
@@ -36,11 +36,15 @@ function createName() {
 
   while (name.length < 7 && !isValidName(name)) {
     letter = letters.charAt(Math.floor(Math.random() * 7));
-    if (!name.includes(letter) || (letter == "A" && !includesThreeAs(name))) {
+    if (!isInArray(letter, name) || (letter == "A" && !includesThreeAs(name))) {
       name.push(letter);
     }
   }
   return name;
+}
+
+function isInArray(value, array) {
+  return array.indexOf(value) > -1;
 }
 
 var finishedName = createName();

@@ -37,7 +37,7 @@ function onMouseUp(e) {
 
       document.getElementById('empty').appendChild(document.getElementById('saratan'));
 
-      document.getElementById('empty').style['text-align'] = "center";
+      document.getElementById('empty').setAttribute("style", "text-align: center");
 
       saratan.removeAttribute("id");
 
