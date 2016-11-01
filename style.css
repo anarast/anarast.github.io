@@ -3,6 +3,22 @@ body {
   font-size: 18px;
 }
 
+.saratan {
+  text-align: right;
+}
+
+.empty {
+  text-align: left;
+}
+
+.spot {
+  font-size: 55px;
+  background-color: #cccccc;
+  color: #cccccc;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
 .heading {
   font-size: 55px;
   background-color: #cccccc;
@@ -17,18 +33,21 @@ body {
 }
 
 .centre {
-  width: 600px;
+  width: 695px;
   position: absolute;
   top:30px;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
+  text-align: center;
 }
 
 hr {
   height: 1px;
   background-color: #737373;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 a:link, a:visited, a:active {

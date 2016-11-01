@@ -9,22 +9,44 @@
 </head>
 
 <body class="centre">
-    <span class="heading drag"></span>
-    <span class="heading drag"></span>
-    <span class="heading drag"></span>
-    <span class="heading drag"></span>
-    <span class="heading drag"></span>
-    <span class="heading drag"></span>
-    <span class="heading drag"></span>
-    <hr></hr>
-    <div>
-      <a href="https://github.com/anarast">GITHUB</a>
-    </div>
-    <div>
-      <a href="https://sadforever.me">SADFOREVER</a>
-    </div>
+  <div class="empty">
+    <span class="spot">S</span>
+    <span class="spot">S</span>
+    <span class="spot">S</span>
+    <span class="spot">S</span>
+    <span class="spot">S</span>
+    <span class="spot">S</span>
+    <span class="spot">S</span>
+  </div>
+
+  <hr></hr>
+
+  <div>
+    <a href="https://github.com/anarast">GITHUB</a>
+  </div>
+
+  <div>
+    <a href="https://sadforever.me">SADFOREVER</a>
+  </div>
+
+  <hr></hr>
+
+  <div class="saratan">
+    <span class="heading drag" onclick="changeBackgroundColour(this, '#b3daff');"></span>
+    <span class="heading drag" onclick="changeBackgroundColour(this, '#b3daff');"></span>
+    <span class="heading drag" onclick="changeBackgroundColour(this, '#b3daff');"></span>
+    <span class="heading drag" onclick="changeBackgroundColour(this, '#b3daff');"></span>
+    <span class="heading drag" onclick="changeBackgroundColour(this, '#b3daff');"></span>
+    <span class="heading drag" onclick="changeBackgroundColour(this, '#b3daff');"></span>
+    <span class="heading drag" onclick="changeBackgroundColour(this, '#b3daff');"></span>
+  </div>
 </body>
 
-<script src="dragdrop.js"></script>
+<script>
+  function changeBackgroundColour(element, colour) {
+    element.style.background = colour;
+  }
+</script>
 <script src="random.js"></script>
+<script src="dragdrop.js"></script>
 </html>
