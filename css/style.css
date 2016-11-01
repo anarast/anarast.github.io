@@ -5,10 +5,16 @@ body {
 
 #saratan {
   text-align: right;
+  padding-top: 20px;
 }
 
 #empty {
   text-align: left;
+  padding-bottom: 20px;
+}
+
+.list {
+  padding-bottom: 6px;
 }
 
 .spot {
@@ -46,8 +52,6 @@ body {
 hr {
   height: 1px;
   background-color: #737373;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 a:link, a:visited, a:active {
