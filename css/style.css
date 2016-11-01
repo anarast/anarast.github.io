@@ -3,11 +3,11 @@ body {
   font-size: 18px;
 }
 
-.saratan {
+#saratan {
   text-align: right;
 }
 
-.empty {
+#empty {
   text-align: left;
 }
 

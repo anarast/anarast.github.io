@@ -7,6 +7,9 @@ var oldZIndex = 0; // we temporarily increase the z-index during drag
 var orderCount = 0;
 var count = 0;
 var elements = document.getElementsByClassName("heading");
+var blankElements = document.getElementsByClassName("spot");
+var empty = document.getElementById("empty");
+var saratan = document.getElementById("saratan");
 var hasBeenClicked1 = false;
 var hasBeenClicked2 = false;
 var hasBeenClicked3 = false;
@@ -26,9 +29,33 @@ function onMouseUp(e) {
     document.onselectstart = null;
     dragElement.ondragstart = null;
     orderCount = checkOrder(dragElement);
-    // if (orderCount == 7) {
-    //   alert("Nice work");
-    // }
+
+    if (orderCount == 7 && document.getElementById('saratan') != null) {
+      while (empty.hasChildNodes()) {
+        empty.removeChild(empty.lastChild);
+      }
+
+      document.getElementById('empty').appendChild(document.getElementById('saratan'));
+
+      document.getElementById('empty').style['text-align'] = "center";
+
+      saratan.removeAttribute("id");
+
+      for (i = 0; i < elements.length; i++) {
+        elements[i].style.background = '#b3daff';
+        elements[i].style.left = '';
+        elements[i].style.top = '';
+      }
+
+      elements[0].innerHTML = "S";
+      elements[1].innerHTML = "A";
+      elements[2].innerHTML = "R";
+      elements[3].innerHTML = "A";
+      elements[4].innerHTML = "T";
+      elements[5].innerHTML = "A";
+      elements[6].innerHTML = "N";
+    }
+
     // stop dragging
     dragElement = null;
   }
