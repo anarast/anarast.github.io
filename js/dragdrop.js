@@ -7,9 +7,8 @@ var oldZIndex = 0; // we temporarily increase the z-index during drag
 var orderCount = 0;
 var count = 0;
 var elements = document.getElementsByClassName("heading");
-var blankElements = document.getElementsByClassName("spot");
 var empty = document.getElementById("empty");
-var saratan = document.getElementById("saratan");
+var block = document.getElementById("block");
 var hasBeenClicked1 = false;
 var hasBeenClicked2 = false;
 var hasBeenClicked3 = false;
@@ -21,6 +20,12 @@ var hasBeenClicked7 = false;
 document.onmousedown = onMouseDown;
 document.onmouseup = onMouseUp;
 
+function getRandomColour() {
+  var colours = ['#ffe6f9', '#ccffe5', '#ccebff','#ccffff'];
+  var num = Math.round(Math.random() * 3) + 1;
+  return colours[num];
+}
+
 function onMouseUp(e) {
   if (dragElement != null) {
     dragElement.style.zIndex = oldZIndex;
@@ -30,19 +35,22 @@ function onMouseUp(e) {
     dragElement.ondragstart = null;
     orderCount = checkOrder(dragElement);
 
-    if (orderCount == 7 && document.getElementById('saratan') != null) {
+    if (orderCount == 7 && document.getElementById("saratan") != null) {
       while (empty.hasChildNodes()) {
         empty.removeChild(empty.lastChild);
       }
 
-      document.getElementById('empty').appendChild(document.getElementById('saratan'));
+      empty.appendChild(document.getElementById("saratan"));
 
-      document.getElementById('empty').setAttribute("style", "text-align: center");
+      empty.setAttribute("style", "text-align: center");
 
       saratan.removeAttribute("id");
 
+      var colour = getRandomColour();
+
       for (i = 0; i < elements.length; i++) {
-        elements[i].style.background = '#b3daff';
+        elements[i].style.background = colour;
+        elements[i].style.border = "2px solid #b3b3b3";
         elements[i].style.left = '';
         elements[i].style.top = '';
       }
@@ -54,6 +62,8 @@ function onMouseUp(e) {
       elements[4].innerHTML = "T";
       elements[5].innerHTML = "A";
       elements[6].innerHTML = "N";
+
+      block.style.backgroundColor = colour;
     }
 
     // stop dragging

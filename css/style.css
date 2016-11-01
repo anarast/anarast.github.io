@@ -13,8 +13,21 @@ body {
   padding-bottom: 20px;
 }
 
+#block {
+  border: 2px solid;
+  border-color: #b3b3b3 transparent #b3b3b3 transparent;
+}
+
+.top {
+  padding-top: 10px;
+}
+
 .list {
   padding-bottom: 6px;
+}
+
+.bottom {
+  padding-bottom: 10px;
 }
 
 .spot {
