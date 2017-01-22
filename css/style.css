@@ -1,3 +1,27 @@
+@media all and (min-width: 45em) {
+  .centre {
+    width: 695px;
+    position: absolute;
+    top:30px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+  }
+  .spot {
+    font-size: 55px !important;
+  }
+
+  .heading {
+    font-size: 55px !important;
+  }
+}
+
+.centre {
+  text-align: center;
+}
+
 body {
   font-family: 'Cutive Mono', monospace;
   font-size: 20px;
@@ -31,7 +55,7 @@ body {
 }
 
 .spot {
-  font-size: 55px;
+  font-size: 38px;
   background-color: #cccccc;
   color: #b3b3b3;
   padding-right: 5px;
@@ -39,7 +63,7 @@ body {
 }
 
 .heading {
-  font-size: 55px;
+  font-size: 38px;
   background-color: #cccccc;
   color: #4d4d4d;
   padding-right: 5px;
@@ -49,17 +73,6 @@ body {
 .drag {
   position: relative;
   cursor: pointer;
-}
-
-.centre {
-  width: 695px;
-  position: absolute;
-  top:30px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  text-align: center;
 }
 
 hr {
