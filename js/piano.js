@@ -41,8 +41,6 @@ document.addEventListener('keydown', (event) => {
   const frequency = keyCodeToFrequency(keyCode);
   if (frequency) {
     synth.triggerAttackRelease(frequency, '10n');
-    console.log(frequency);
-
     document.getElementById(frequency).style.opacity = 0.5;
   }
 }, false);
