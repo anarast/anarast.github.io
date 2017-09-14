@@ -1,0 +1,78 @@
+@green: #c4ffdd;
+@yellow:#ffc726;
+@orange: #ffe8d1;
+@dark-pink:#F6546A;
+@light-pink: #FFC0CB;
+@purple:#816EA5;
+@gray-blue: #294159;
+@blue: #4AC7CC;
+@salmon: #FF6F69;
+
+@left-margin: 170px;
+
+@media all and (min-width: 45em) { // Desktop-only styles
+  .outer-container {
+    max-width: 600px;
+  }
+}
+
+body {
+  color: @blue;
+}
+
+.outer-container {
+  font-family: 'Inconsolata', monospace;
+  font-size: 14px;
+  margin: 0 auto;
+  position: relative;
+  border: 2px solid @light-pink;
+  padding: 10px 15px 10px 15px;
+  height: 92vh;
+}
+
+.side-elem {
+  position: absolute;
+  width: 165px;
+}
+
+.horiz-align-container {
+  margin-left: @left-margin;
+  border-left: 3px double @light-pink;
+  padding-left: 15px;
+}
+
+.horiz-align {
+  display: flex;
+}
+
+div.work-box {
+  margin-right: 10px;
+  width: 220px;
+  height: 120px;
+}
+
+.main-heading {
+  color: @yellow;
+  font-family: 'Shrikhand', cursive;
+  font-size: 40px;
+}
+
+div.sub-heading {
+  color: @salmon;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.sub-heading#right {
+  // margin-left: @left-margin-heading;
+}
+
+p.sub-sub-heading {
+  color: @blue;
+  text-decoration: underline;
+}
+
+hr {
+	border-top: 3px double @light-pink;
+  margin-bottom: 20px;
+}
