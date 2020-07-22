@@ -1,90 +1,85 @@
-@media all and (min-width: 45em) {
-  .centre {
-    width: 695px;
-    position: absolute;
-    top:30px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    text-align: center;
-  }
-  .spot {
-    font-size: 55px !important;
-  }
-
-  .heading {
-    font-size: 55px !important;
-  }
-}
-
-.centre {
-  text-align: center;
-}
-
 body {
-  font-family: 'Cutive Mono', monospace;
-  font-size: 20px;
+  background-image: url("/images/bg_stars.gif");
 }
 
-#saratan {
-  text-align: right;
-  padding-top: 20px;
-}
-
-#empty {
-  text-align: left;
-  padding-bottom: 20px;
-}
-
-#block {
-  border: 2px solid;
-  border-color: #b3b3b3 transparent #b3b3b3 transparent;
-}
-
-.top {
-  padding-top: 10px;
-}
-
-.list {
-  padding-bottom: 6px;
-}
-
-.bottom {
-  padding-bottom: 10px;
-}
-
-.spot {
-  font-size: 38px;
-  background-color: #cccccc;
-  color: #b3b3b3;
-  padding-right: 5px;
-  padding-left: 5px;
-}
-
-.heading {
-  font-size: 38px;
-  background-color: #cccccc;
-  color: #4d4d4d;
-  padding-right: 5px;
-  padding-left: 5px;
-}
-
-.drag {
+.grid-container {
   position: relative;
-  cursor: pointer;
+  padding-top: 175px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 200px 100px;
+  width: 700px;
+  margin: auto;
 }
 
-hr {
-  height: 1px;
-  background-color: #737373;
+.space-tan {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
-a:link, a:visited, a:active {
-  text-decoration: none;
-  color: #4d4d4d;
+.pressbox,
+.junior {
+  padding-top: 50px;
 }
 
-a:hover {
-  background-color: #cccccc;
+.bball {
+  position: absolute;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  left: 100px;
+  top: -20px;
+}
+
+.jam-central {
+  position: absolute;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  left: 150px;
+  top: 50px;
+}
+
+.lunar-tunes {
+  position: absolute;
+  grid-column-start: 3;
+  grid-row-start: 1;
+  top: 20px;
+  left: 20px;
+}
+
+.pressbox {
+  position: absolute;
+  grid-column-start: 1;
+  grid-row-start: 2;
+  left: 30px;
+  top: 20px;
+}
+
+.junior {
+  position: absolute;
+  grid-column-start: 3;
+  grid-row-start: 2;
+  left: 70px;
+}
+
+.sitemap {
+  position: absolute;
+  grid-column-start: 2;
+  grid-row-start: 3;
+  left: 70px;
+  top: 20px;
+}
+
+.studiostore {
+  position: absolute;
+  grid-column-start: 1;
+  grid-row-start: 3;
+  left: 130px;
+}
+
+.behind {
+  position: absolute;
+  grid-column-start: 3;
+  grid-row-start: 3;
 }

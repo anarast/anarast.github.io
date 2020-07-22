@@ -1,76 +1,60 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
   <link rel="stylesheet/less" type="text/css" href="./less/main.less">
-  <link rel="stylesheet/less" type="text/css" href="./less/tooltip.less">
   <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
 
-  <title>SARATAN</title>
+  <title>Sara Tan</title>
   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', 'UA-86807954-1', 'auto');
     ga('send', 'pageview');
   </script>
 </head>
 
-<body class="centre">
-  <div id="empty">
-    <span class="spot">1</span>
-    <span class="spot">2</span>
-    <span class="spot">3</span>
-    <span class="spot">4</span>
-    <span class="spot">5</span>
-    <span class="spot">6</span>
-    <span class="spot">7</span>
-  </div>
-
-  <div id="block">
-    <!-- <div class="top list">
-      <a href="./piano/makey_piano">PIANO</a>
+<body>
+  <div class="grid-container">
+    <div class="grid-item jam-central">
+      <img src="images/p-jamcentral.gif" alt="Planet B-Ball" width="55" height="67">
     </div>
-    <div class="list">
-      <a href="./cv">CV</a>
-    </div>  -->
-     <!--<div class="list">
-      <a href="https://github.com/anarast">GITHUB</a>
-    </div> -->
-
-    <!-- <div class="list">
-      <a href="https://www.linkedin.com/in/sara-tan-112a00126">LINK IN</a>
-    </div> -->
-
-    <!-- <div class="list">
-      <a href="https://blargh.sadforever.me">I MADE A BLOG</a>
+    <div class="grid-item bball">
+      <img src="images/p-bball.gif" alt="Space Tan (aka Sara Jam)" width="62" height="62">
     </div>
-
-    <div class="list">
-      <a href="https://sadforever.me">SAD FOREVER</a>
-    </div> -->
-
-    <div class="top bottom tooltip">ABOUT
-      <span class="tooltiptext"></span>
+    <div class="grid-item lunar-tunes">
+      <img src="images/p-lunartunes.gif" alt="Planet B-Ball" width="95" height="77">
+    </div>
+    <div class="grid-item pressbox">
+      <img src="images/p-pressbox.gif" alt="Planet B-Ball" width="131" height="56">
+    </div>
+    <div class="grid-item space-tan">
+      <img src="images/space_tan.gif" alt="Space Tan (aka Sara Jam)" width="272" height="165">
+    </div>
+    <div class="grid-item junior">
+      <img src="images/p-junior.gif" alt="Planet B-Ball" width="49" height="57">
+    </div>
+    <div class="grid-item studiostore">
+      <img src="images/p-studiostore.gif" alt="Planet B-Ball" width="94" height="72">
+    </div>
+    <div class="grid-item sitemap">
+      <img src="images/p-sitemap.gif" alt="Planet B-Ball" width="104" height="67">
+    </div>
+    <div class="grid-item behind">
+      <img src="images/p-behind.gif" alt="Planet B-Ball" width="67" height="63">
     </div>
   </div>
 
-  <div id="saratan">
-    <span class="heading drag"></span>
-    <span class="heading drag"></span>
-    <span class="heading drag"></span>
-    <span class="heading drag"></span>
-    <span class="heading drag"></span>
-    <span class="heading drag"></span>
-    <span class="heading drag"></span>
-  </div>
 </body>
-
-<script src="js/random_name.js"></script>
-<script src="js/random_about.js"></script>
-<script src="js/dragdrop.js"></script>
-</html>
