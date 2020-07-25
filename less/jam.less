@@ -2,28 +2,16 @@ body {
   background-image: url("/images/bg_stars.gif");
 }
 
+a:focus {
+  border: 1px solid white;
+}
+
 .jam-button-container {
   text-align: center;
-}
 
-#normal-grid-container {
-  display: none;
-  position: relative;
-  padding-top: 130px;
-  text-align: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100px 200px 100px;
-  width: 700px;
-  margin: auto;
-}
-
-.sara-tan {
-  text-align: center;
-}
-
-#sara-tan {
-  width: 279px;
-  height: 223px;
+  button {
+    font-size: 14px;
+  }
 }
 
 #jam-grid-container {
@@ -35,10 +23,6 @@ body {
   grid-template-rows: 100px 200px 100px;
   width: 700px;
   margin: auto;
-}
-
-a:focus {
-  border: 1px solid white;
 }
 
 .space-tan {
@@ -230,5 +214,10 @@ a:focus {
   .behind {
     left: 0px;
     top: 0px;
+  }
+
+  #sara-tan {
+    width: 195px;
+    height: 156px;
   }
 }

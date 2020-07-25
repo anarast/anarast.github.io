@@ -15,14 +15,16 @@ function updateJam() {
     normalGridContainer.style.display === "grid"
   ) {
     jamButton.textContent = "Jam it down";
+    jamButton.classList.remove("not-jam");
     normalGridContainer.style.display = "none";
     jamGridContainer.style.display = "grid";
     body.style.backgroundImage = "url('/images/bg_stars.gif')";
   } else {
     jamButton.textContent = "Jam it up";
+    jamButton.classList.add("not-jam");
     jamGridContainer.style.display = "none";
     normalGridContainer.style.display = "grid";
     body.style.backgroundImage = "none";
-    body.style.backgroundColor = "#EAF0F6";
+    body.style.backgroundColor = "#dfeaf5";
   }
 }
