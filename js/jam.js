@@ -23,6 +23,6 @@ function updateJam() {
     jamGridContainer.style.display = "none";
     normalGridContainer.style.display = "grid";
     body.style.backgroundImage = "none";
-    body.style.backgroundColor = "#032e63";
+    body.style.backgroundColor = "#EAF0F6";
   }
 }
