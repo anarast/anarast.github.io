@@ -18,7 +18,7 @@ button.not-jam {
 #normal-grid-container {
   display: none;
   position: relative;
-  padding-top: 140px;
+  padding-top: 130px;
   text-align: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 100px 200px 100px;
@@ -27,14 +27,90 @@ button.not-jam {
 }
 
 .sara-tan {
-  text-align: center;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
-.triangle {
-  width: 100px;
+.inky {
+  width: 62px;
+  height: 62px;
+  position: absolute;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  left: 100px;
+  top: -30px;
+}
+
+.pyma {
+  position: absolute;
+  grid-column-start: 3;
+  grid-row-start: 1;
+  top: 50px;
+  left: 20px;
+  width: 95px;
+  height: 77px;
+}
+
+.link {
+  position: absolute;
+  grid-column-start: 1;
+  grid-row-start: 2;
+  left: 45px;
+  top: 20px;
+  width: 131px;
+  height: 56px;
+}
+
+.taylor {
+  position: absolute;
+  grid-column-start: 2;
+  grid-row-start: 3;
+  left: 80px;
+  top: 90px;
+  width: 104px;
+  height: 67px;
+}
+
+.books-in-pants {
+  position: absolute;
+  grid-column-start: 1;
+  grid-row-start: 3;
+  left: 100px;
+  width: 94px;
+  height: 72px;
+}
+
+.github {
+  position: absolute;
+  grid-column-start: 3;
+  grid-row-start: 3;
+  left: 40px;
+  width: 67px;
+  height: 63px;
 }
 
 #sara-tan {
   width: 279px;
-  height: 223px;
+}
+
+#books-in-pants {
+  width: 75px;
+}
+
+#taylor {
+  width: 75px;
+}
+
+#link {
+  width: 60px;
+}
+
+#inky {
+  width: 70px;
+  image-rendering: crisp-edges;
+}
+
+#pyma {
+  width: 85px;
 }
