@@ -2,11 +2,35 @@ body {
   background-image: url("/images/bg_stars.gif");
 }
 
-.grid-container {
+.jam-button-container {
+  text-align: center;
+}
+
+#normal-grid-container {
+  display: none;
+  position: relative;
+  padding-top: 130px;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 200px 100px;
+  width: 700px;
+  margin: auto;
+}
+
+.sara-tan {
+  text-align: center;
+}
+
+#sara-tan {
+  width: 279px;
+  height: 223px;
+}
+
+#jam-grid-container {
+  display: grid;
   position: relative;
   padding-top: 175px;
   text-align: center;
-  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 100px 200px 100px;
   width: 700px;
@@ -108,7 +132,7 @@ a:focus {
 }
 
 @media only screen and (max-width: 768px) {
-  .grid-container {
+  #jam-grid-container {
     position: relative;
     padding-top: 150px;
     text-align: center;
