@@ -18,7 +18,7 @@ function updateJam() {
     jamButton.classList.remove("not-jam");
     normalGridContainer.style.display = "none";
     jamGridContainer.style.display = "grid";
-    body.style.backgroundImage = "url('/images/bg_stars.gif')";
+    body.style.backgroundImage = "url('/assets/bg_stars.gif')";
   } else {
     jamButton.textContent = "Jam it up";
     jamButton.classList.add("not-jam");
